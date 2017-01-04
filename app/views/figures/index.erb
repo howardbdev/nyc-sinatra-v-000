@@ -1,1 +1,8 @@
 views/figures/index.erb
+<h2>Figures Index</h2>
+
+<% @figures.each do |figure| %>
+
+  <h3>Name: <%= figure.name %></h3>
+
+<% end %>

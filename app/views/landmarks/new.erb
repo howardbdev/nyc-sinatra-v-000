@@ -1,0 +1,14 @@
+views/landmarks/new.erb
+
+<form method="post" action="/landmarks">
+  <h3>Create a New Landmark</h3>
+  <br></br>
+
+  <label>Name</label>
+  <input type="text" name=landmark[name] id="landmark_name"></input>
+
+  <label>Year Completed</label>
+  <input type="text" name=landmark[year_completed] id="landmark_year_completed"></input>
+
+  <input type="submit" value="Create New Landmark"></input>
+</form>

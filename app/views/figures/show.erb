@@ -1,1 +1,14 @@
 views/figures/show.erb
+<h2>Figure Show Page</h2>
+
+<h3>Figure Name: <%= @figure.name %></h3>
+
+<h3>Title(s): </h3>
+<% @figure.titles.each do |title| %>
+  <li><%= title.name %></li>
+<% end %>
+
+<h3>Associated Landmark(s): </h3>
+<% @figure.landmarks.each do |landmark| %>
+  <li><%= landmark.name %></li>
+<% end %>
